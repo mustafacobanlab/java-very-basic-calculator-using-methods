@@ -21,13 +21,13 @@ public class HesapMakinesi {
 	}
    static int sayi(int a,int b,String Tur) {
 	   int s = 0;
-	   if(Tur.equals("T"))
+	   if(Tur.equals("T") || Tur.equals("t"))
 		 s =  a + b;
-	   else if(Tur.equals("C"))
+	   else if(Tur.equals("C") || Tur.equals("c"))
 			 s =  a - b;
-	   else if(Tur.equals("X"))
+	   else if(Tur.equals("X") || Tur.equals("x"))
 			 s =  a * b;
-	   else if(Tur.equals("B"))
+	   else if(Tur.equals("B") || Tur.equals("b"))
 			 s =  a / b;
 	   else {
 		 JOptionPane.showMessageDialog(null,"Hatali islem turu girdiniz.");
